@@ -7,6 +7,7 @@
   <title>My blog</title>
 </head>
 <body>
+
   <div class='container'>
     <header>
       <h1>Welcome!</h1>
@@ -14,12 +15,12 @@
 
     <div class='main-wrap'>
       <nav class='sidebar'>
-        <ol>
-          <li>Intro</li>
-          <li>Projects</li>
-          <li>Biography</li>
-          <li>Contact</li>
-        </ol>
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
       <div class='content'>
         <section id='intro'>
@@ -31,11 +32,12 @@
 
         <section id='projects'>
           <h1>Projects</h1>
-          <ol>
-            <li><a href="https://github.com/kimchio/kimchio.github.io/">web</a></li>
+          <ul>
+            <li><a href="https://github.com/kimchio/kimchio.github.io/">Web</a></li>
             <li>OS(Linux)</li>
-            <li>AI</li>
-          </ol>
+            <li><a href="./src/ai_lec.html">AI Lecture summarize</a></li>
+            <li><a href="./scr/nn_imp.html">Neural network implimentation</a></li>
+          </ul>
         </section>
 
         <section id='biography'>
@@ -44,6 +46,31 @@
         <p>I'm assistant engineer in samsung elctoronics. 2016-03-01<br>
         I graduated Hanyang univ. Computer science & engineering (2009-03 ~ 2016-02)<br></p>
         </section>
+
+        <section>
+
+          <div id='disqus_thread'></div>
+          <script>
+
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+          var disqus_config = function () {
+              this.page.url = 'thisismyfirstcommnet';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'qwe111'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+
+          (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = '//kimchio.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+          </script>
+        </section>
+
+
 
         <section id='contact'>
           <h1>any complain or question</h1>
