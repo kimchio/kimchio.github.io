@@ -1,7 +1,10 @@
 body {
 	font-family: 'Lora', serif;
 }
-
+header ul li{
+    padding-top:10px;
+    display:inline;
+}
 h1, header, footer {
 	text-align: center;
 }
